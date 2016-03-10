@@ -20,7 +20,6 @@
 *.mtc
 *.mtc1
 *.out
-main.pdf
-tutkimussuunnitelma.pdf
+*.pdf
 *.synctex.gz
 node_modules
