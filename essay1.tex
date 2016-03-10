@@ -13,11 +13,11 @@
 % To use a different bibliography style, just change "numeric" to
 % your preferred style (mla for MLA style, alphabetic for Author-Year
 % style, etc.) There are a lot of options; check the BibLaTeX documentation.
-\usepackage[backend=bibtex,style=numeric]{biblatex}
+\usepackage[sorting=none,backend=bibtex,style=numeric]{biblatex}
 % Select the bibliography file
 \addbibresource{sources.bib}
 
-\title{Essay about Apple vs FBI dispute}
+\title{Essay about FBI-Apple encryption dispute}
 \subtitle{Homework 1, Mobile Computing and Applications (CS442)}
 \author{2016/3/11\protect\\Atte Keinänen\protect\\Student ID 20166051}
 \date{}
@@ -27,9 +27,20 @@
 
 \begin{document}
 \maketitle{}
-\cite{isntatsake}
-\cite{mustunlock}
-\cite{appletellscourt}
-\cite{thereareotherways}
+
+In 2015 and 2016, Apple has received at least 12 government requests to assist in accessing contents of encrypted mobile phones. Most of these have been received under All Writs Act, a United States statute from 1789, which requires companies to help to carry out legal requests in cases like search warrants. Apple has systematically objected or challenged all 12 requests. \cite{courtfilings}
+
+The latest turn in the long-lasting dispute is the case of unlocking iPhone of San Bernardino's shooter, dating to February 2016. The court which investigated the shooting and FBI ordered Apple to create a custom firmware, which makes unlocking the device easy. In particular, the firmware would allow the court to try different login passphrases in an automated fashion. As a consequence, the court could easily decrypt and access the contents of the phone. \cite{mustunlock}
+
+The case received a lot of attention when Tim Cook, Apple's CEO, published a public letter \cite{messagetocustomers} about the case in Apple's website. Both court's request and Apple's letter have caused controversy and heated public conversation. In following text, I express my personal opinion about the case and the public conversation from three perspectives: legislation, security and publicity.
+
+\bigskip\noindent\textbf{Use of All Writs Act.} The criticts of All Writs Act say that it's an ancient, way too universal law, and they even say that using it is a "nuclear option" \cite{mustunlock}. In my opinion, those are valid arguments: a law that simply allows courts to require a person or company to do \textit{something} is really vague. The law should tell explicitly in which well-scoped circumstances the law will apply. Using that kind of "law-for-everything" is not respectable.
+
+\bigskip\noindent\textbf{Security implications.} Tim Cook says in his public letter that building a backdoor for unlocking the phone is not "a simple, clean-cut solution" that would be used only once. Once created, it would be used again and again, being comparable to a "master key" to numerous phones. \cite{messagetocustomers} This claim isn't waterproof: Ars Technica claims that the modified firmware could be used only in the specific device for which it's designed for, even if it would be leaked. That leads to a conclusion that actually encryption or security isn't at stake \cite{isntatsake}. I'm not able to say which opinion is correct and which wrong.
+
+\bigskip\noindent\textbf{Apple's call for public support.} From my point of view, for Apple their public letter has been a hugely successful PR campaign. They show up as the only company who have been able to create mobile devices with uncompromised security, and they stand strong against the pressure. The public letter wasn't an inevitable reaction that Apple \textit{had} to do. Instead, it was well-planned communication to customers and a way to change the public opinion towards the court case.
+
+\bigskip\noindent The case is really complex - some even say that court and FBI don't necessarily need help from Apple \cite{thereareotherways}. Only one thing is sure: Apple has lot's of positive publicity, thanks to their public defencing of their user's security and safety.
+\newpage
 \printbibliography
 \end{document}
